@@ -1,0 +1,139 @@
+body {
+    height: 500px;
+    width: 400px;
+}
+
+.img {
+    position: relative;
+    height: 450px;
+    width: 350px;
+    background-image: url(https://www.pixtury.com/photos/E36C67925FB-234320085D2713E51D36B/1.jpg);
+    border-radius: 20px;
+    object-fit: contain;
+    top: 20px;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+}
+
+.img:hover {
+    opacity: 0.7;
+    transition: 0.8s;
+}
+
+button:first-child {
+    background-color: red;
+}
+
+.save {
+    visibility: hidden;
+    position: absolute;
+    width: 100px;
+    height: 70px;
+    border-radius: 50px;
+    top: 10px;
+    left: 240px;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.img:hover .save {
+    animation-name: savebutton;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-fill-mode: none;
+    visibility: visible;
+}
+
+@keyframes savebutton {
+    from {
+      transform: translateY(-100px);
+    }
+
+    to {
+        transform: translateY(0);
+
+    }
+
+}
+
+.text {
+    visibility: hidden;
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+    position: absolute;
+    top: 380px;
+    left: 15px;
+    border: none;
+    font-size: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+
+.img:hover .text {
+    animation-name: oderbutton;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: none; 
+    visibility: visible;
+}
+
+.download {
+    visibility: hidden;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    position: absolute;
+    top: 380px;
+    left: 230px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.img:hover .download {
+    animation-name: oderbutton;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: none;
+    visibility: visible;
+}
+
+.dot {
+    visibility: hidden;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    position: absolute;
+    top: 380px;
+    left: 290px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.img:hover .dot {
+    animation-name: oderbutton;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: none;
+    visibility: visible;
+}
+
+@keyframes oderbutton {
+    from {
+        transform: translateY(100px);
+
+    }
+
+    to {
+       transform: translateY(0);
+    }
+}
